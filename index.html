@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Bootbox</title>
+
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" type="text/css" href="../web-test/res/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <!-- JS dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 dependency -->
+    <!-- Development version -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="../web-test/res/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+
+    <!-- bootbox code -->
+    <script src="../web-test/res/bootbox.js"></script>
+    <script src="../web-test/res/bootbox.locales.js"></script>
+
+    <script>
+        function minhaFuncao() {
+            bootbox.alert("Fui clicado!");
+        }
+    </script>
+
+</head>
+<body onload="{bootbox.alert('Olá!')}">
+
+    <button type="button" class="btn btn-primary" onclick="minhaFuncao()">Clique me</button>
+
+</body>
+</html>
